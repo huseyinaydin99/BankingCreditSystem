@@ -120,6 +120,5 @@ public class CorporateCustomer : Entity<Guid>
         ContactPersonEmail = contactPersonEmail;
         ContactPersonPhone = contactPersonPhone;
         Website = website;
-        CreatedDate = DateTime.UtcNow;
     }
 }

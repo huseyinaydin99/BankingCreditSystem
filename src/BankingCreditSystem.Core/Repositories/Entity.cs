@@ -3,9 +3,10 @@ namespace BankingCreditSystem.Core.Repositories;
 /// <summary>
 /// Generic Id alanına sahip temel varlık (entity) sınıfı.
 /// Tüm domain varlıkları bu sınıftan türemelidir.
+/// ITimestamp interface'ini implement ederek zaman damgası bilgilerini yönetir.
 /// </summary>
 /// <typeparam name="TId">Varlık kimliğinin tipi (int, Guid, string vb.)</typeparam>
-public abstract class Entity<TId> where TId : notnull
+public abstract class Entity<TId> : ITimestamp where TId : notnull
 {
     /// <summary>
     /// Varlığın benzersiz kimliğini alır veya ayarlar.

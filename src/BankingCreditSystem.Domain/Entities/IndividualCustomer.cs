@@ -104,6 +104,5 @@ public class IndividualCustomer : Entity<Guid>
         Nationality = nationality;
         MaritalStatus = maritalStatus;
         MonthlyIncome = monthlyIncome;
-        CreatedDate = DateTime.UtcNow;
     }
 }
