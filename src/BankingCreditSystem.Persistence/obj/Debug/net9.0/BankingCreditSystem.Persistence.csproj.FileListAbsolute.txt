@@ -16,3 +16,5 @@ C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Persi
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Persistence\obj\Debug\net9.0\refint\BankingCreditSystem.Persistence.dll
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.pdb
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Persistence\obj\Debug\net9.0\ref\BankingCreditSystem.Persistence.dll
+C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Application.dll
+C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Application.pdb

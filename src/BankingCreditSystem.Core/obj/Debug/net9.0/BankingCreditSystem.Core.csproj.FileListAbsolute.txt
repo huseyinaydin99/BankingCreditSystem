@@ -10,3 +10,4 @@ C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Core\
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Core\obj\Debug\net9.0\refint\BankingCreditSystem.Core.dll
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Core\obj\Debug\net9.0\BankingCreditSystem.Core.pdb
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Core\obj\Debug\net9.0\ref\BankingCreditSystem.Core.dll
+C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.Core\obj\Debug\net9.0\BankingCreditSystem.Core.csproj.AssemblyReference.cache

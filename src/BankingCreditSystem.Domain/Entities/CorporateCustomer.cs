@@ -4,9 +4,9 @@ namespace BankingCreditSystem.Domain.Entities;
 
 /// <summary>
 /// Kurumsal müşteri varlık sınıfı.
-/// Banka sisteminde kurumsal müşterileri temsil eder.
+/// Şirketlere özgü alanları içerir.
 /// </summary>
-public class CorporateCustomer : Entity<Guid>
+public class CorporateCustomer : Customer
 {
     /// <summary>
     /// Şirketin adı / Ticari unvanı
@@ -17,16 +17,6 @@ public class CorporateCustomer : Entity<Guid>
     /// Şirketin vergi numarası
     /// </summary>
     public string TaxNumber { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Şirketin e-posta adresi
-    /// </summary>
-    public string Email { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Şirketin telefon numarası
-    /// </summary>
-    public string PhoneNumber { get; set; } = string.Empty;
 
     /// <summary>
     /// Şirketin kuruluş tarihi
@@ -74,22 +64,17 @@ public class CorporateCustomer : Entity<Guid>
     public string Website { get; set; } = string.Empty;
 
     /// <summary>
-    /// Müşterinin hesap durumu (Active, Inactive, Closed)
-    /// </summary>
-    public string AccountStatus { get; set; } = "Active";
-
-    /// <summary>
     /// Şirketin kuruluşundan bu yana kaç yılda olduğunu hesaplar
     /// </summary>
     public int YearsInBusiness => DateTime.UtcNow.Year - FoundationDate.Year;
 
     /// <summary>
-    /// Parametre olmayan constructor
+    /// Parametre olmayan constructor (ORM için)
     /// </summary>
     protected CorporateCustomer() { }
 
     /// <summary>
-    /// Kurumsal müşteri oluşturur
+    /// Yeni kurumsal müşteri oluşturur.
     /// </summary>
     public CorporateCustomer(
         string companyName,
@@ -105,12 +90,10 @@ public class CorporateCustomer : Entity<Guid>
         string contactPersonEmail,
         string contactPersonPhone,
         string website)
+        : base(contactPersonName, string.Empty, contactPersonEmail, contactPersonPhone)
     {
-        Id = Guid.NewGuid();
         CompanyName = companyName;
         TaxNumber = taxNumber;
-        Email = email;
-        PhoneNumber = phoneNumber;
         FoundationDate = foundationDate;
         Industry = industry;
         CompanyType = companyType;

@@ -4,30 +4,10 @@ namespace BankingCreditSystem.Domain.Entities;
 
 /// <summary>
 /// Bireysel müşteri varlık sınıfı.
-/// Banka sisteminde bireysel müşterileri temsil eder.
+/// Kurumsal olmayan müşterilere özgü alanları içerir.
 /// </summary>
-public class IndividualCustomer : Entity<Guid>
+public class IndividualCustomer : Customer
 {
-    /// <summary>
-    /// Müşterinin adı
-    /// </summary>
-    public string FirstName { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Müşterinin soyadı
-    /// </summary>
-    public string LastName { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Müşterinin elektronik posta adresi
-    /// </summary>
-    public string Email { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Müşterinin telefon numarası
-    /// </summary>
-    public string PhoneNumber { get; set; } = string.Empty;
-
     /// <summary>
     /// Müşterinin T.C. kimlik numarası
     /// </summary>
@@ -59,27 +39,12 @@ public class IndividualCustomer : Entity<Guid>
     public decimal MonthlyIncome { get; set; }
 
     /// <summary>
-    /// Müşterinin hesap durumu (Active, Inactive, Closed)
-    /// </summary>
-    public string AccountStatus { get; set; } = "Active";
-
-    /// <summary>
-    /// Tam adını döndürür
-    /// </summary>
-    public string FullName => $"{FirstName} {LastName}";
-
-    /// <summary>
-    /// Yaşını hesaplar
-    /// </summary>
-    public int Age => DateTime.UtcNow.Year - DateOfBirth.Year;
-
-    /// <summary>
-    /// Parametre olmayan constructor
+    /// Parametre olmayan constructor (ORM için)
     /// </summary>
     protected IndividualCustomer() { }
 
     /// <summary>
-    /// Bireysel müşteri oluşturur
+    /// Yeni bireysel müşteri oluşturur.
     /// </summary>
     public IndividualCustomer(
         string firstName,
@@ -92,12 +57,8 @@ public class IndividualCustomer : Entity<Guid>
         string nationality,
         string maritalStatus,
         decimal monthlyIncome)
+        : base(firstName, lastName, email, phoneNumber)
     {
-        Id = Guid.NewGuid();
-        FirstName = firstName;
-        LastName = lastName;
-        Email = email;
-        PhoneNumber = phoneNumber;
         IdentityNumber = identityNumber;
         DateOfBirth = dateOfBirth;
         Gender = gender;

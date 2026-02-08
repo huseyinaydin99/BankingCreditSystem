@@ -1,105 +1,91 @@
-namespace BankingCreditSystem.Core.Repositories;
+using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Query;
 
 /// <summary>
-/// Generic repository arayüzü, tüm entity varlıkları için temel CRUD işlemlerini sağlar.
-/// Entity Framework Core ile birlikte asenkron işlemleri destekler.
+/// Asenkron çalışan generic repository arayüzü.
+/// Temel CRUD, sorgulama ve sayfalama operasyonlarını tanımlar.
 /// </summary>
-/// <typeparam name="TEntity">Entity türü (Entity<TId>'den türemeli)</typeparam>
-/// <typeparam name="TId">Entity Id alanının türü</typeparam>
-public interface IAsyncRepository<TEntity, TId>
-    where TEntity : Entity<TId>
-    where TId : notnull
+/// <typeparam name="TEntity">Repository tarafından yönetilen entity tipi</typeparam>
+/// <typeparam name="TId">Entity kimlik tipi</typeparam>
+public interface IAsyncRepository<TEntity, TId> where TEntity : BankingCreditSystem.Core.Repositories.Entity<TId>
 {
     /// <summary>
-    /// ID'ye göre tek bir varlığı asenkron olarak getirir.
+    /// Verilen koşula göre tek bir entity döndürür.
+    /// Include, soft delete ve tracking seçeneklerini destekler.
     /// </summary>
-    /// <param name="id">Varlık ID'si</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Varlık nesne veya null</returns>
-    Task<TEntity?> GetAsync(TId id, CancellationToken cancellationToken = default);
-
-    /// <summary>
-    /// Tüm varlıkları sayfalama destekli olarak asenkron olarak getirir.
-    /// </summary>
-    /// <param name="pageNumber">Sayfa numarası (1'den başlar)</param>
-    /// <param name="pageSize">Sayfa başına öğe sayısı</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Sayfalanmış varlık listesi</returns>
-    Task<PagedResult<TEntity>> GetListAsync(int pageNumber = 1, int pageSize = 10, CancellationToken cancellationToken = default);
-
-    /// <summary>
-    /// Belirtilen koşulu sağlayan varlıkları sayfalama destekli olarak asenkron olarak getirir.
-    /// </summary>
-    /// <param name="predicate">Filtreleme koşulu</param>
-    /// <param name="pageNumber">Sayfa numarası</param>
-    /// <param name="pageSize">Sayfa başına öğe sayısı</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Filtrelenmiş sayfalanmış varlık listesi</returns>
-    Task<PagedResult<TEntity>> GetListAsync(
-        Func<IQueryable<TEntity>, IQueryable<TEntity>> predicate,
-        int pageNumber = 1,
-        int pageSize = 10,
+    Task<TEntity?> GetAsync(
+        Expression<Func<TEntity, bool>> predicate,
+        Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null,
+        bool withDeleted = false,
+        bool enableTracking = true,
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Belirtilen koşulu sağlayan varlık var mı diye kontrol eder.
+    /// Verilen kriterlere göre sayfalanmış entity listesini döndürür.
+    /// Filtreleme, sıralama ve include desteği sağlar.
     /// </summary>
-    /// <param name="predicate">Kontrol koşulu</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>true varlık var ise, false ise</returns>
-    Task<bool> AnyAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>> predicate, CancellationToken cancellationToken = default);
+    Task<Paginate<TEntity>> GetListAsync(
+        Expression<Func<TEntity, bool>>? predicate = null,
+        Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>>? orderBy = null,
+        Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null,
+        int index = 0,
+        int size = 10,
+        bool withDeleted = false,
+        bool enableTracking = true,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Tek bir varlık ekler.
+    /// Verilen koşula göre herhangi bir kayıt olup olmadığını kontrol eder.
     /// </summary>
-    /// <param name="entity">Eklenecek varlık</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Eklenen varlık</returns>
-    Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken = default);
+    Task<bool> AnyAsync(
+        Expression<Func<TEntity, bool>>? predicate = null,
+        bool withDeleted = false,
+        bool enableTracking = true,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Birden fazla varlık ekler.
+    /// Yeni bir entity ekler ve veritabanına kaydeder.
     /// </summary>
-    /// <param name="entities">Eklenecek varlık koleksiyonu</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Yapılması gereken işlem (SaveChanges çağrılmalı)</returns>
-    Task AddRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default);
+    Task<TEntity> AddAsync(
+        TEntity entity,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Tek bir varlığı günceller.
+    /// Birden fazla entity ekler ve veritabanına kaydeder.
     /// </summary>
-    /// <param name="entity">Güncellenecek varlık</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Güncellenen varlık</returns>
-    Task<TEntity> UpdateAsync(TEntity entity, CancellationToken cancellationToken = default);
+    Task<ICollection<TEntity>> AddRangeAsync(
+        ICollection<TEntity> entities,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Birden fazla varlığı günceller.
+    /// Mevcut bir entity’i günceller.
     /// </summary>
-    /// <param name="entities">Güncellenecek varlık koleksiyonu</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Yapılması gereken işlem (SaveChanges çağrılmalı)</returns>
-    Task UpdateRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default);
+    Task<TEntity> UpdateAsync(
+        TEntity entity,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Tek bir varlığı siler.
+    /// Birden fazla entity’i günceller.
     /// </summary>
-    /// <param name="entity">Silinecek varlık</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Yapılması gereken işlem (SaveChanges çağrılmalı)</returns>
-    Task DeleteAsync(TEntity entity, CancellationToken cancellationToken = default);
+    Task<ICollection<TEntity>> UpdateRangeAsync(
+        ICollection<TEntity> entities,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Birden fazla varlığı siler.
+    /// Entity’i siler.
+    /// Permanent false ise soft delete, true ise fiziksel silme yapar.
     /// </summary>
-    /// <param name="entities">Silinecek varlık koleksiyonu</param>
-    /// <param name="cancellationToken">İşlem iptal tokeni</param>
-    /// <returns>Yapılması gereken işlem (SaveChanges çağrılmalı)</returns>
-    Task DeleteRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default);
+    Task<TEntity> DeleteAsync(
+        TEntity entity,
+        bool permanent = false,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// IQueryable'ı döndürür, böylece kompleks sorgular yazılabilir.
+    /// Birden fazla entity’i siler.
+    /// Permanent false ise soft delete, true ise fiziksel silme yapar.
     /// </summary>
-    /// <returns>IQueryable nesne</returns>
-    IQueryable<TEntity> QueryAsNoTracking();
+    Task<ICollection<TEntity>> DeleteRangeAsync(
+        ICollection<TEntity> entities,
+        bool permanent = false,
+        CancellationToken cancellationToken = default);
 }
