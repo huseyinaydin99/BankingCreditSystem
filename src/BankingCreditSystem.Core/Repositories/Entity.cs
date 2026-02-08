@@ -1,4 +1,4 @@
-namespace BankingCreditSystem.Core.Entities;
+namespace BankingCreditSystem.Core.Repositories;
 
 /// <summary>
 /// Generic Id alanına sahip temel varlık (entity) sınıfı.

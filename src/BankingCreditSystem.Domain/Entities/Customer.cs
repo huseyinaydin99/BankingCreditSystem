@@ -1,4 +1,4 @@
-using BankingCreditSystem.Core.Entities;
+using BankingCreditSystem.Core.Repositories;
 
 namespace BankingCreditSystem.Domain.Entities;
 
