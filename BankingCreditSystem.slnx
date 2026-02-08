@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BankingCreditSystem.Application/BankingCreditSystem.Application.csproj" />
+    <Project Path="src/BankingCreditSystem.Core/BankingCreditSystem.Core.csproj" />
+    <Project Path="src/BankingCreditSystem.Domain/BankingCreditSystem.Domain.csproj" />
+    <Project Path="src/BankingCreditSystem.Persistence/BankingCreditSystem.Persistence.csproj" />
+    <Project Path="src/BankingCreditSystem.WebApi/BankingCreditSystem.WebApi.csproj" />
+  </Folder>
+</Solution>
