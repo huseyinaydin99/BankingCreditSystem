@@ -1,19 +1,27 @@
+using BankingCreditSystem.Application;
+using BankingCreditSystem.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
+// Konteynere servisler ekleyin.
+
+builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Konteynere servisler ekleyin.
+// Application & Persistence Service Registrations
+builder.Services.AddApplicationServices();
+builder.Services.AddPersistenceServices(builder.Configuration);
 
 var app = builder.Build();
 
 
-// HTTP istek iþlem hattýný yapýlandýrýn.
+// HTTP istek islem hattina yapilandirin.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-// HTTP istek iþlem hattýný yapýlandýrýn.
 
 app.UseHttpsRedirection();
 

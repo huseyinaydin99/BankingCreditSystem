@@ -85,3 +85,5 @@ C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.WebAp
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.WebApi\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\Huseyin_Aydin\Desktop\BankingCreditSystem\src\BankingCreditSystem.WebApi\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

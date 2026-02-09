@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\bankingcreditsystem.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\bankingcreditsystem.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC2E31E-C695-EB65-30FB-93274E8A5A5C}|src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.core\\crosscuttingconcerns\\exceptions\\handlers\\httpexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC2E31E-C695-EB65-30FB-93274E8A5A5C}|src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|solutionrelative:src\\bankingcreditsystem.core\\crosscuttingconcerns\\exceptions\\handlers\\httpexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\extensions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\extensions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BankingCreditSystem.WebApi",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj",
-              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-09T10:39:57.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Program.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "ExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T10:39:03.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HttpExceptionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Handlers\\HttpExceptionHandler.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Handlers\\HttpExceptionHandler.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Handlers\\HttpExceptionHandler.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Handlers\\HttpExceptionHandler.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:21:40.155Z",
+              "WhenOpened": "2026-02-09T11:21:13.37Z",
               "EditorCaption": ""
             }
           ]

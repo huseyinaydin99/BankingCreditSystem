@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "5UDfHavMYgc=",
+  "dgSpecHash": "mVgv/toluHU=",
   "success": true,
   "projectFilePath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Huseyin_Aydin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
