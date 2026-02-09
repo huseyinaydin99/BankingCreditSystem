@@ -34,7 +34,7 @@ public class ExceptionMiddleware
     }
 }
 
-// Extension method for middleware registration
+// Ara katman kaydý için geniþletme yöntemi
 public static class ExceptionMiddlewareExtensions
 {
     public static IApplicationBuilder UseCustomExceptionMiddleware(this IApplicationBuilder app)

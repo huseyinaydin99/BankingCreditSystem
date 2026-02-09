@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC2E31E-C695-EB65-30FB-93274E8A5A5C}|src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.core\\crosscuttingconcerns\\exceptions\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC2E31E-C695-EB65-30FB-93274E8A5A5C}|src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|solutionrelative:src\\bankingcreditsystem.core\\crosscuttingconcerns\\exceptions\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "src\\BankingCreditSystem.Core\\CrossCuttingConcerns\\Exceptions\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T09:09:35.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Program.cs",
+              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T09:07:29.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
