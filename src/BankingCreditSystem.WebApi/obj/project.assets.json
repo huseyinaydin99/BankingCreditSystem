@@ -1063,7 +1063,10 @@
         },
         "runtime": {
           "bin/placeholder/BankingCreditSystem.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "BankingCreditSystem.Domain/1.0.0": {
         "type": "project",
