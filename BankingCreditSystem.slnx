@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <File Path="migration-commands.txt" />
     <Project Path="src/BankingCreditSystem.Application/BankingCreditSystem.Application.csproj" />
     <Project Path="src/BankingCreditSystem.Core/BankingCreditSystem.Core.csproj" />
     <Project Path="src/BankingCreditSystem.Domain/BankingCreditSystem.Domain.csproj" />
