@@ -1,4 +1,3 @@
-using BankingCreditSystem.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 

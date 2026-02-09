@@ -1,5 +1,4 @@
 using BankingCreditSystem.Core.Repositories;
-using BankingCreditSystem.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using BankingCreditSystem.Persistence.Contexts;
 using BankingCreditSystem.Application.Services.Repositories;

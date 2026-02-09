@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\contexts\\basedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\contexts\\basedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC2E31E-C695-EB65-30FB-93274E8A5A5C}|src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.core\\bankingcreditsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1EC2E31E-C695-EB65-30FB-93274E8A5A5C}|src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|solutionrelative:src\\bankingcreditsystem.core\\bankingcreditsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\entityconfigurations\\individualcustomerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\entityconfigurations\\individualcustomerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\entityconfigurations\\customerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\entityconfigurations\\customerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\entityconfigurations\\corporatecustomerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\entityconfigurations\\corporatecustomerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\repositories\\individualcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\repositories\\individualcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BaseDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "IndividualCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Repositories\\IndividualCustomerRepository.cs",
+              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\Repositories\\IndividualCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Repositories\\IndividualCustomerRepository.cs",
+              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\Repositories\\IndividualCustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T17:34:10.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BankingCreditSystem.Core",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj",
-              "RelativeToolTip": "src\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAEwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-08T17:33:27.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CorporateCustomerConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CorporateCustomerConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CorporateCustomerConfiguration.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CorporateCustomerConfiguration.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CorporateCustomerConfiguration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T17:30:04.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomerConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CustomerConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CustomerConfiguration.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CustomerConfiguration.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\EntityConfigurations\\CustomerConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T17:29:59.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IndividualCustomerConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\EntityConfigurations\\IndividualCustomerConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\EntityConfigurations\\IndividualCustomerConfiguration.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\EntityConfigurations\\IndividualCustomerConfiguration.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\EntityConfigurations\\IndividualCustomerConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T17:28:01.613Z",
+              "WhenOpened": "2026-02-09T07:46:27.845Z",
               "EditorCaption": ""
             }
           ]

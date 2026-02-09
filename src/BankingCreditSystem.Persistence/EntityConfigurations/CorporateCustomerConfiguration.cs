@@ -1,25 +1,36 @@
-using BankingCreditSystem.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BankingCreditSystem.Persistence.EntityConfigurations;
-
-public class CorporateCustomerConfiguration : IEntityTypeConfiguration<CorporateCustomer>
+namespace BankingCreditSystem.Persistence.EntityConfigurations
 {
-    public void Configure(EntityTypeBuilder<CorporateCustomer> builder)
+    public class CorporateCustomerConfiguration : IEntityTypeConfiguration<CorporateCustomer>
     {
-        builder.HasBaseType<Customer>();
+        public void Configure(EntityTypeBuilder<CorporateCustomer> builder)
+        {
+            builder.ToTable("CorporateCustomers");
 
-        builder.Property(x => x.CompanyName).HasMaxLength(200).IsRequired();
-        builder.Property(x => x.TaxNumber).HasMaxLength(50).IsRequired(false);
-        builder.Property(x => x.FoundationDate).IsRequired(false);
-        builder.Property(x => x.Industry).HasMaxLength(100).IsRequired(false);
-        builder.Property(x => x.CompanyType).HasMaxLength(50).IsRequired(false);
-        builder.Property(x => x.EmployeeCount).IsRequired(false);
-        builder.Property(x => x.AnnualRevenue).HasColumnType("decimal(18,2)");
-        builder.Property(x => x.ContactPersonName).HasMaxLength(200).IsRequired(false);
-        builder.Property(x => x.ContactPersonEmail).HasMaxLength(200).IsRequired(false);
-        builder.Property(x => x.ContactPersonPhone).HasMaxLength(50).IsRequired(false);
-        builder.Property(x => x.Website).HasMaxLength(250).IsRequired(false);
+            builder.Property(c => c.CompanyName)
+                .HasMaxLength(100)
+                .IsRequired();
+            
+            builder.Property(c => c.TaxNumber)
+                .HasMaxLength(10)
+                .IsRequired();
+            
+            builder.Property(c => c.TaxOffice)
+                .HasMaxLength(50)
+                .IsRequired();
+            
+            builder.Property(c => c.CompanyRegistrationNumber)
+                .HasMaxLength(20)
+                .IsRequired();
+            
+            builder.Property(c => c.AuthorizedPersonName)
+                .HasMaxLength(100)
+                .IsRequired();
+
+            builder.HasIndex(c => c.TaxNumber)
+                .IsUnique();
+        }
     }
-}
+} 
