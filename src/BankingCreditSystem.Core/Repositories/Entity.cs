@@ -14,6 +14,16 @@ public abstract class Entity<TId> : ITimestamp where TId : notnull
     /// </summary>
     public TId Id { get; set; } = default!;
 
+    protected Entity()
+    {
+        
+    }
+
+    protected Entity(TId id)
+    {
+        Id = id; 
+    }
+
     /// <summary>
     /// Varlığın UTC cinsinden oluşturulma tarihini alır veya ayarlar.
     /// </summary>

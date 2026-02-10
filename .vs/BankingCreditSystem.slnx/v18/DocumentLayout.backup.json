@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\controllers\\creditapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\controllers\\creditapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreditApplicationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAxwBYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T11:16:43.828Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
