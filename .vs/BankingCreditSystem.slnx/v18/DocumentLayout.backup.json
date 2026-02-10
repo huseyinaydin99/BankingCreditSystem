@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\migration-commands.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|src{827E0CD3-B72D-47B6-A68D-7590B98EB39B}|solutionrelative:migration-commands.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.webapi\\controllers\\individualcustomerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45DC1E34-6FF5-B2DC-5AC5-89BB305C0452}|src\\BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:src\\bankingcreditsystem.webapi\\controllers\\individualcustomerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\appsettings.json",
-              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-09T14:15:40.435Z",
+              "Title": "IndividualCustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Controllers\\IndividualCustomersController.cs",
+              "RelativeDocumentMoniker": "src\\BankingCreditSystem.WebApi\\Controllers\\IndividualCustomersController.cs",
+              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.WebApi\\Controllers\\IndividualCustomersController.cs",
+              "RelativeToolTip": "src\\BankingCreditSystem.WebApi\\Controllers\\IndividualCustomersController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T15:24:00.242Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "migration-commands.txt",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\migration-commands.txt",
-              "RelativeDocumentMoniker": "migration-commands.txt",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\migration-commands.txt",
-              "RelativeToolTip": "migration-commands.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-09T13:58:46.409Z"
             }
           ]
         }
