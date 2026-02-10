@@ -1,2 +1,5 @@
 add-migration init
 update-database
+
+add-migration AddCreditTypesAndApplication
+update-database
