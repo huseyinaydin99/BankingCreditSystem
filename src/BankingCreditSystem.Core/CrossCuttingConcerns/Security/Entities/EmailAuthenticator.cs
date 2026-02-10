@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities;
 
-public class EmailAuthenticator : Entity<int>
+public class EmailAuthenticator<TId> : Entity<TId>
 {
     public int UserId { get; set; }
     public string? ActivationKey { get; set; }
     public bool IsVerified { get; set; }
 
-    public virtual User User { get; set; } = null!;
+    public virtual ApplicationUser<TId> User { get; set; } = null!;
 
     public EmailAuthenticator() { }
 
@@ -23,7 +23,7 @@ public class EmailAuthenticator : Entity<int>
         IsVerified = isVerified;
     }
 
-    public EmailAuthenticator(int id, int userId, bool isVerified)
+    public EmailAuthenticator(TId id, int userId, bool isVerified)
         : base(id)
     {
         UserId = userId;

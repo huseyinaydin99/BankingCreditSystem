@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Security.JWT;
 
-public class JwtHelper : ITokenHelper
+public class JwtHelper<TId> : ITokenHelper<TId>
 {
     public IConfiguration Configuration { get; }
     private readonly TokenOptions _tokenOptions;
@@ -29,9 +29,9 @@ public class JwtHelper : ITokenHelper
             ?? throw new NullReferenceException($"\"{configurationSection}\" Bu bölüm yapılandırmada bulunamadı.\n");
     }
 
-    public RefreshToken CreateRefreshToken(User user, string ipAddress)
+    public RefreshToken<TId> CreateRefreshToken(ApplicationUser<TId> user, string ipAddress)
     {
-        RefreshToken refreshToken =
+        RefreshToken<TId> refreshToken =
            new()
            {
                UserId = user.Id,
@@ -43,7 +43,7 @@ public class JwtHelper : ITokenHelper
         return refreshToken;
     }
 
-    public AccessToken CreateToken(User user, IList<OperationClaim> operationClaims)
+    public AccessToken CreateToken(ApplicationUser<TId> user, IList<OperationClaim<TId>> operationClaims)
     {
         _accessTokenExpiration = DateTime.Now.AddMinutes(_tokenOptions.AccessTokenExpiration);
         SecurityKey securityKey = SecurityKeyHelper.CreateSecurityKey(_tokenOptions.SecurityKey);
@@ -57,9 +57,9 @@ public class JwtHelper : ITokenHelper
 
     public JwtSecurityToken CreateJwtSecurityToken(
         TokenOptions tokenOptions,
-        User user,
+        ApplicationUser<TId> user,
         SigningCredentials signingCredentials,
-        IList<OperationClaim> operationClaims
+        IList<OperationClaim<TId>> operationClaims
     )
     {
         JwtSecurityToken jwt =
@@ -74,12 +74,12 @@ public class JwtHelper : ITokenHelper
         return jwt;
     }
 
-    private IEnumerable<Claim> SetClaims(User user, IList<OperationClaim> operationClaims)
+    private IEnumerable<Claim> SetClaims(ApplicationUser<TId> user, IList<OperationClaim<TId>> operationClaims)
     {
         List<Claim> claims = new();
         claims.AddNameIdentifier(user.Id.ToString());
         claims.AddEmail(user.Email);
-        claims.AddName($"{user.FirstName} {user.LastName}");
+        //claims.AddName($"{user.FirstName} {user.LastName}");
         claims.AddRoles(operationClaims.Select(c => c.Name).ToArray());
         return claims;
     }

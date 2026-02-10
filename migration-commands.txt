@@ -3,3 +3,6 @@ update-database
 
 add-migration AddCreditTypesAndApplication
 update-database
+
+add-migration AddApplicationWideUserSystem
+update-database

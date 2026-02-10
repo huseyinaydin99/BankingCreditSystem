@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities;
 
-public class OperationClaim : Entity<int>
+public class OperationClaim<TId> : Entity<TId>
 {
     public string Name { get; set; }
 
-    public virtual ICollection<UserOperationClaim> UserOperationClaims { get; set; } = null!;
+    public virtual ICollection<UserOperationClaim<TId>> UserOperationClaims { get; set; } = null!;
 
     public OperationClaim()
     {
@@ -23,7 +23,7 @@ public class OperationClaim : Entity<int>
         Name = name;
     }
 
-    public OperationClaim(int id, string name)
+    public OperationClaim(TId id, string name)
         : base(id)
     {
         Name = name;

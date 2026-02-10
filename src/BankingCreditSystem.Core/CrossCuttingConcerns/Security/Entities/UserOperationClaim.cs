@@ -2,18 +2,19 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities;
 
-public class UserOperationClaim : Entity<int>
+public class UserOperationClaim<TId> : Entity<TId>
 {
     public int UserId { get; set; }
     public int OperationClaimId { get; set; }
 
-    public virtual User User { get; set; }
-    public virtual OperationClaim OperationClaim { get; set; }
+    public virtual ApplicationUser<TId> User { get; set; }
+    public virtual OperationClaim<TId> OperationClaim { get; set; }
 
     public UserOperationClaim(int userId, int operationClaimId)
     {
@@ -21,7 +22,7 @@ public class UserOperationClaim : Entity<int>
         OperationClaimId = operationClaimId;
     }
 
-    public UserOperationClaim(int id, int userId, int operationClaimId)
+    public UserOperationClaim(TId id, int userId, int operationClaimId)
         : base(id)
     {
         UserId = userId;

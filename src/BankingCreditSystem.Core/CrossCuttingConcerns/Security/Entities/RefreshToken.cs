@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities;
 
-public class RefreshToken : Entity<int>
+public class RefreshToken<TId> : Entity<TId>
 {
-    public int UserId { get; set; }
+    public TId UserId { get; set; }
     public string Token { get; set; }
     public DateTime Expires { get; set; }
     public string CreatedByIp { get; set; }
@@ -18,7 +18,7 @@ public class RefreshToken : Entity<int>
     public string? ReplacedByToken { get; set; }
     public string? ReasonRevoked { get; set; }
 
-    public virtual User User { get; set; } = null!;
+    public virtual ApplicationUser<TId> User { get; set; } = null!;
 
     public RefreshToken()
     {
@@ -26,7 +26,7 @@ public class RefreshToken : Entity<int>
         CreatedByIp = string.Empty;
     }
 
-    public RefreshToken(int userId, string token, DateTime expires, string createdByIp)
+    public RefreshToken(TId userId, string token, DateTime expires, string createdByIp)
     {
         UserId = userId;
         Token = token;
@@ -34,7 +34,7 @@ public class RefreshToken : Entity<int>
         CreatedByIp = createdByIp;
     }
 
-    public RefreshToken(int id, int userId, string token, DateTime expires, string createdByIp)
+    public RefreshToken(TId id, TId userId, string token, DateTime expires, string createdByIp)
         : base(id)
     {
         UserId = userId;

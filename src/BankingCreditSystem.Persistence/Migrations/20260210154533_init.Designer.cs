@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankingCreditSystem.Persistence.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
-    [Migration("20260210092457_AddCreditTypesAndApplication")]
-    partial class AddCreditTypesAndApplication
+    [Migration("20260210154533_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,53 @@ namespace BankingCreditSystem.Persistence.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities.User<System.Guid>", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AuthenticatorType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(21)
+                        .HasColumnType("nvarchar(21)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User<Guid>");
+
+                    b.HasDiscriminator().HasValue("User<Guid>");
+
+                    b.UseTphMappingStrategy();
+                });
 
             modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CreditApplication", b =>
                 {
@@ -176,6 +223,39 @@ namespace BankingCreditSystem.Persistence.Migrations
                     b.UseTptMappingStrategy();
                 });
 
+            modelBuilder.Entity("BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities.ApplicationUser<System.Guid>", b =>
+                {
+                    b.HasBaseType("BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities.User<System.Guid>");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CustomerType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsCustomerActive")
+                        .HasColumnType("bit");
+
+                    b.PrimitiveCollection<string>("OperationClaims")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique()
+                        .HasFilter("[CustomerId] IS NOT NULL");
+
+                    b.HasDiscriminator().HasValue("ApplicationUser<Guid>");
+                });
+
             modelBuilder.Entity("CorporateCustomer", b =>
                 {
                     b.HasBaseType("Customer");
@@ -281,6 +361,15 @@ namespace BankingCreditSystem.Persistence.Migrations
                     b.Navigation("ParentCreditType");
                 });
 
+            modelBuilder.Entity("BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities.ApplicationUser<System.Guid>", b =>
+                {
+                    b.HasOne("Customer", null)
+                        .WithOne("ApplicationUser")
+                        .HasForeignKey("BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities.ApplicationUser<System.Guid>", "CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("CorporateCustomer", b =>
                 {
                     b.HasOne("Customer", null)
@@ -304,6 +393,12 @@ namespace BankingCreditSystem.Persistence.Migrations
                     b.Navigation("CreditApplications");
 
                     b.Navigation("SubCreditTypes");
+                });
+
+            modelBuilder.Entity("Customer", b =>
+                {
+                    b.Navigation("ApplicationUser")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
