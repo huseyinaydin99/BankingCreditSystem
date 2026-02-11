@@ -1,5 +1,7 @@
 using AutoMapper;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Create;
+using BankingCreditSystem.Application.Features.IndividualCustomers.Dtos.Responses;
+using BankingCreditSystem.Core.CrossCuttingConcerns.Security.Entities;
 
 namespace BankingCreditSystem.Application.Features.IndividualCustomers.Profiles;
 
@@ -27,6 +29,15 @@ public class MappingProfiles : Profile
 
         CreateMap<Paginate<IndividualCustomer>, Paginate<IndividualCustomerResponse>>()
         .ForMember(dest => dest.Items, opt => opt.MapFrom(src => src.Items));
+
+        // ==================== APPLICATION USER MAPPINGS ====================
+        CreateMap<ApplicationUser<Guid>, ApplicationUserResponse>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+            .ForMember(dest => dest.CustomerId, opt => opt.MapFrom(src => src.CustomerId))
+            .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.PhoneNumber))
+            .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address))
+            .ForMember(dest => dest.IsUserActive, opt => opt.MapFrom(src => src.IsUserActive));
 
     }
 }

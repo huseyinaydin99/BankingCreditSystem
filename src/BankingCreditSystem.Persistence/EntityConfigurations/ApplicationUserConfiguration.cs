@@ -22,9 +22,9 @@ public class ApplicationUserConfiguration<TId> : IEntityTypeConfiguration<Applic
         builder.HasIndex(au => au.CustomerId)
             .HasDatabaseName("IX_ApplicationUsers_CustomerId");
 
-        builder.Property(au => au.CustomerType)
+        /*builder.Property(au => au.CustomerType)
             .HasMaxLength(50)
-            .IsRequired();
+            .IsRequired();*/
 
         builder.Property(au => au.PhoneNumber)
             .HasMaxLength(20)
@@ -34,7 +34,7 @@ public class ApplicationUserConfiguration<TId> : IEntityTypeConfiguration<Applic
             .HasMaxLength(500)
             .IsRequired(false);
 
-        builder.Property(au => au.IsCustomerActive)
+        builder.Property(au => au.IsUserActive)
             .HasDefaultValue(false)
             .IsRequired();
 

@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\migrations\\20260210154533_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\migrations\\20260210154533_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\huseyin_aydin\\desktop\\bankingcreditsystem\\src\\bankingcreditsystem.persistence\\contexts\\basedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CA5DEB-174F-9844-0E71-C499FABC0C14}|src\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:src\\bankingcreditsystem.persistence\\contexts\\basedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260210154533_init.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Migrations\\20260210154533_init.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\Migrations\\20260210154533_init.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Migrations\\20260210154533_init.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\Migrations\\20260210154533_init.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAlwJEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T15:48:44.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "RelativeDocumentMoniker": "src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "ToolTip": "C:\\Users\\Huseyin_Aydin\\Desktop\\BankingCreditSystem\\src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "RelativeToolTip": "src\\BankingCreditSystem.Persistence\\Contexts\\BaseDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T15:48:31.804Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

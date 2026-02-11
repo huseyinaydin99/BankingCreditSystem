@@ -7,6 +7,11 @@ public class CreateIndividualCustomerRequest
     public string? MotherName { get; set; }
     public string? FatherName { get; set; }
     public string PhoneNumber { get; set; } = default!;
-    public string Email { get; set; } = default!;
     public string Address { get; set; } = default!;
+    
+    /// <summary>
+    /// Müşteri için sistem eposta ve şifresi (ApplicationUser account için)
+    /// </summary>
+    public string Email { get; set; } = default!;
+    public string Password { get; set; } = default!;
 }

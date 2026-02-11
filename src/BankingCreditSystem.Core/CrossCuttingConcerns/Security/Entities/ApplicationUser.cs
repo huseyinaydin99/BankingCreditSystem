@@ -22,7 +22,7 @@ public class ApplicationUser<TId> : User<TId>
     /// <summary>
     /// Müşteri tipi: "Individual" veya "Corporate"
     /// </summary>
-    public string CustomerType { get; set; } = string.Empty;
+    //public string CustomerType { get; set; } = string.Empty; //yapay zeka azizliğine uğradım olmaması gerekiyor!
 
     /// <summary>
     /// Müşteri telefon numarası
@@ -37,7 +37,7 @@ public class ApplicationUser<TId> : User<TId>
     /// <summary>
     /// Müşteri aktif durumu
     /// </summary>
-    public bool IsCustomerActive { get; set; }
+    public bool IsUserActive { get; set; }
 
     // ==== Role/Authorization Properties ====
     /// <summary>

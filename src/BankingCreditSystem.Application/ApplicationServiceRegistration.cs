@@ -5,6 +5,7 @@ using BankingCreditSystem.Application.Features.IndividualCustomers.Rules;
 using BankingCreditSystem.Application.Features.CorporateCustomers.Rules;
 using System.Reflection;
 using FluentValidation;
+using BankingCreditSystem.Core.CrossCuttingConcerns.Security.Services;
 
 namespace BankingCreditSystem.Application;
 
@@ -22,6 +23,9 @@ public static class ApplicationServiceRegistration
         // Business Rules
         services.AddScoped<IndividualCustomerBusinessRules>();
         services.AddScoped<CorporateCustomerBusinessRules>();
+
+        // Security Services
+        services.AddScoped<IPasswordHashingService, PasswordHashingService>();
 
         return services;
     }
